@@ -36,6 +36,7 @@ ul, ol {
 a {
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
 img {
@@ -72,10 +73,10 @@ address {
 }
 
 .header-page .container {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 4px 25px;
 }
 .navigation {
     display: flex;
@@ -83,29 +84,30 @@ address {
 }
 
 .navigation-list {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    gap: 8px;
+    gap: 4px;
 }
 
 .navigation-list-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    border-radius: 8px;
-    background: rgba(27, 65, 75, 0.5);
-
-    text-transform: uppercase;
     text-align: center;
-    color: #fbfbfb;
 
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 9px;
-    padding: 15px 25px;
+
+}
+
+.navigation-list-item-link {
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  padding: 15px 25px 15px 24px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 9px;
+  background: rgba(27, 65, 75, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+
 }
 .logo {
     font-family: "Inter", sans-serif;
@@ -121,20 +123,133 @@ address {
 .social-list {
     display: flex;
     gap: 8px;
-    padding-bottom: 12px;
-    padding-top: 12px;
 }
 
 
+
+
+.social-list-icon {
+  display: block;
+  fill: #1b414b;
+
+}
 
 
 /* HERO */
 
 .hero-page {
   background-color: #0e1823;
-    background-image: url("../images/back-hero.jpg");
-    height: 800px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background-image: url("../images/back-hero.jpg");
+  margin: 0 auto;
+  max-width: 1440px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 235px;
+  padding-bottom: 215px;
 }
+.hero-page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  margin-bottom: 24px;
+  max-width: 1001px;
+
+}
+
+.hero-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.7);
+  margin-bottom: 48px;
+  max-width: 597px;
+}
+
+.hero-rental-link {
+  border-radius: 15px;
+  padding: 16px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  background: #1b414b;
+  display: inline-block;
+  
+}
+
+
+/* review-page */
+
+
+.review-page {
+  background: #fbfbfb;
+  border-radius: 28px;
+  width: 1340px;
+  margin: 0 auto;
+}
+.review-page .container {
+  padding: 0;
+}
+.title-two {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #1b414b;
+}
+
+.advantage {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px 0;
+  gap: 299px;
+}
+.advantage-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 404px;
+  
+}
+
+.review-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #1b414b;
+  }
+
+
+.review-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  color: #040306;
+  opacity: 0.4;
+  margin-bottom: 100px;
+}
+
+.review-image {
+  border-radius: 26px;
+}
+
