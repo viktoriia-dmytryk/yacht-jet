@@ -58,10 +58,21 @@ address {
     padding: 0 25px;
 }
 
+/* ANIMATION */
+
+@keyframes header-move {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 32px;
+  }
+}
+
 /* HEADER */
 .header-page {
     position: fixed;
-    top: 32px;
+    top: -60px;
     left: 50%;
     transform: translateX(-50%);
     width: 1240px;
@@ -70,6 +81,17 @@ address {
     border-radius: 8px;
     background-color: #fbfbfb;
     z-index: 100;
+    box-shadow:
+        0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+    ;
+
+
+    animation-name: header-move;
+    animation-duration: 1.5s;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
 }
 
 .header-page .container {
@@ -139,7 +161,10 @@ address {
 
 .hero-page {
   background-color: #0e1823;
-  background-image: url("../images/back-hero.jpg");
+  background-image: linear-gradient(rgb(17, 19, 31, 0.15), 
+        rgb(17, 19, 31, 0.75), 
+        rgb(17, 19, 31, 0.98)), 
+        url("../images/back-hero.jpg");
   margin: 0 auto;
   max-width: 1440px;
   background-size: cover;
@@ -220,11 +245,8 @@ address {
   gap: 299px;
 }
 .advantage-wrapper {
-
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   max-width: 404px;
+  margin-bottom: 100px;
   
 }
 
@@ -235,6 +257,7 @@ address {
   line-height: 100%;
   letter-spacing: -0.02em;
   color: #1b414b;
+  margin-bottom: 20px;
   }
 
 
@@ -246,10 +269,188 @@ address {
   letter-spacing: -0.02em;
   color: #040306;
   opacity: 0.4;
-  margin-bottom: 100px;
 }
 
 .review-image {
   border-radius: 26px;
 }
 
+
+/* CHOOSE SECTION */
+
+.choose-page {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.choose-page .title-two {
+  margin: 0 auto 75px;
+  color: #fbfbfb;
+  text-align: center;
+  max-width: 714px;
+
+  
+}
+
+.choose-page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 25px;
+}
+.yacht-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 50px;
+  
+
+}
+
+.yacht-list-item {
+  background-color: #fbfbfb;
+  width: 392px;
+  padding: 16px 16px 32px;
+  border-radius: 24px;
+}
+
+.yacht-list-image {
+  border-radius: 24px;
+  width: 360px;
+}
+
+.yacht-list-text-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #1b414b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.yacht-list-text-title::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  top: 32px;
+  background-color: rgba(4, 3, 6, 0.1);
+  position: absolute;
+}
+.yacht-list-span-title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(4, 3, 6, 0.4);
+  ;
+}
+
+.yacht-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(4, 3, 6, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yacht-list-span {
+  color: #040306;
+}
+.yacht-list-text-box {
+  
+  width: 328px;
+  margin-top: 32px;
+}
+
+.yacht-list-rent-link {
+  display: inline-block;
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  border-radius: 15px;
+  padding: 16px 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* BENEFITS PAGE */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-page {
+  padding-bottom: 150px;
+}
+
+.benefits-page .container {
+  display: flex;
+  gap: 32px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1b414b;
+  border-radius: 24px;
+  padding: 90px 50px;
+  row-gap: 44px;
+  column-gap: 32px;
+
+}
+
+.benefits-list-item {
+  max-width: 318px;
+}
+
+.benefits-list-title {
+  margin-bottom: 38px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #fbfbfb;
+  position: relative;
+}
+.benefits-list-title::after {
+  content: "";
+  position: absolute;
+  border-radius: 18px;
+  left: 0;
+  bottom: -18px;
+  width: 318px;
+  height: 2px;
+  background-color: rgba(251, 251, 251, 0.1);
+}
+.benefits-list-text {
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.benefits-list-image {
+  border-radius: 24px;
+    width: 540px;
+}
