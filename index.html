@@ -252,20 +252,51 @@
       <!-- RENT-PAGE -->
       <section class="rent-page" id="rent">
         <div class="container">
-          <form action="" name="feedback_form" autocomplete="off" novalidate>
-            <h2 class="title-two">Rent a yacht now</h2>
-            <img
-              class="rent-page-image"
-              src="./images/night-yacht.jpg"
-              alt="Yacht in the night sea"
-            />
-            <input class="rent-page-input" type="text" />
-            <input class="rent-page-input" type="text" />
-            <input class="rent-page-input" type="number" />
-            <input class="rent-page-input" type="text" />
+          <img
+            class="rent-page-image"
+            src="./images/night-yacht.jpg"
+            alt="Yacht in the night sea"
+          />
 
-            <button class="rent-page-button" type="submit">Sent</button>
-          </form>
+          <div class="form-box">
+            <h2 class="title-two">Rent a yacht now</h2>
+
+            <form
+              class="form-list"
+              action="submit-form"
+              name="order_form"
+              autocomplete="off"
+              novalidate
+            >
+              <input
+                class="rent-page-input-name"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+
+              <input
+                class="rent-page-input-mail"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+
+              <input class="rent-page-input-number" type="number" />
+
+              <input
+                class="rent-page-input-comment"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+
+              <button class="rent-page-button" type="submit">Sent</button>
+            </form>
+          </div>
         </div>
       </section>
 
