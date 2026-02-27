@@ -460,12 +460,14 @@ button {
 
 /* RENT PAGE */
 
-.rent-page {}
+.rent-page {
+  padding-bottom: 150px;
+}
 
 .rent-page .container {
   display: flex;
   gap: 50px;
-  padding-bottom: 150px;
+  
 }
 
 .rent-page .title-two {
