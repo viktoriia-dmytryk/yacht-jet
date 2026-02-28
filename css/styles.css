@@ -503,6 +503,7 @@ button {
 .rent-page .container {
   display: flex;
   gap: 50px;
+  padding-right: 75px;
   
 }
 
@@ -518,17 +519,18 @@ button {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  flex: 1;
 }
 .form-list {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  width: 100%;
 }
 
 
 .form-list input,
 .form-list textarea {
-  width: 472px;
   padding: 18px;
   border-radius: 12px;
   border: 1px solid rgba(251, 251, 251, 0.2);
