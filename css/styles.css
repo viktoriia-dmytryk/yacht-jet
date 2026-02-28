@@ -180,6 +180,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 
 .hero-title {
@@ -300,7 +301,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4px 25px;
+  padding: 0 25px;
 }
 .yacht-list {
   display: flex;
@@ -334,7 +335,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
   position: relative;
 }
 
@@ -372,9 +373,11 @@ button {
   color: #040306;
 }
 .yacht-list-text-box {
-  
+  display: flex;
+  flex-direction: column;
+  margin: 32px auto 0;
   width: 328px;
-  margin-top: 32px;
+  gap: 6px;
 }
 
 .yacht-list-rent-link {
@@ -486,44 +489,29 @@ button {
 .form-list {
   display: flex;
   flex-direction: column;
+  gap: 18px;
 }
 
-.rent-page-input-name {
-  border: 1px solid rgba(251, 251, 251, 0.2);
-  border-radius: 12px;
-  padding: 18px 388px 18px 18px;
+
+.form-list input,
+.form-list textarea {
   width: 472px;
-  height: 54px;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(251, 251, 251, 0.2);
   background-color: transparent;
-  margin-bottom: 18px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fbfbfb;
 }
 
-.rent-page-input-mail {
-  border: 1px solid rgba(251, 251, 251, 0.2);
-  border-radius: 12px;
-  padding: 18px 388px 18px 18px;
-  width: 472px;
-  height: 54px;
-  background-color: transparent;
-  margin-bottom: 18px;
-}
 
-.rent-page-input-number {
-  border: 1px solid rgba(251, 251, 251, 0.2);
-  border-radius: 12px;
-  padding: 18px 388px 18px 18px;
-  width: 472px;
-  height: 54px;
-  background-color: transparent;
-  margin-bottom: 18px;
-}
+
 .rent-page-input-comment {
-  border: 1px solid rgba(251, 251, 251, 0.2);
-  border-radius: 12px;
-  padding: 18px 388px 18px 18px;
-  width: 472px;
   height: 116px;
-  background-color: transparent;
+  resize: none;
 }
 .rent-page-button {
   background-color: #1b414b;
@@ -536,7 +524,162 @@ button {
   letter-spacing: -0.02em;
   color: #fbfbfb;
   width: 194px;
-  margin-top: 50px;
 }
 
+input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: rgba(251, 251, 251, 0.4);
+}
 /* RESPONSE */
+.response-page {
+  padding-bottom: 150px;
+}
+
+.response-page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+}
+
+.response-page .title-two {
+  color: #fbfbfb;
+  max-width: 854px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.response-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  opacity: 0.4;
+  max-width: 571px;
+  margin-bottom: 75px;
+}
+
+.response-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+
+}
+
+.response-list-item {
+  width: calc((100% - 64px) / 3);
+  background-color: #fbfbfb;
+  border-radius: 24px;
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.response-list-imaage {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+  
+}
+
+.response-list-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #040306;
+  margin-bottom: 8px;
+}
+
+.response-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(4, 3, 6, 0.4);
+  max-width: 320px;
+}
+
+/* FOOTER */
+
+.footer-page-section .logo{
+
+  color: #fbfbfb;
+}
+.footer-page-section {
+  background: #1b414b;
+  border-radius: 24px 24px 0 0;
+  margin: 0 auto;
+  padding: 50px 0 20px;
+  max-width: 1390px;
+}
+.footer-page-section .container {
+  padding: 0 75px;
+
+}
+
+.navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 96px;
+  align-items: center;
+}
+
+
+.navigation-footer .navigation-list-item-link {
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  background: rgba(251, 251, 251, 0.3);
+}
+
+.footer-page-section .social-list-icon {
+  fill: #fbfbfb;
+}
+
+.footer-page-section .title-two {
+  font-family: "Inter", sans-serif;
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 99px;
+}
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.copy-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 118%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.copy-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 118%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.4);
+}
